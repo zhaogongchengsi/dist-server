@@ -5,3 +5,12 @@
 ```shell
 make build-all
 ```
+
+### windows 设置环境变量 bin
+
+
+## 使用
+
+```shell
+preview
+```
