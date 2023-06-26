@@ -4,7 +4,10 @@ build-windows:
 
 # 编译 macOS 可执行文件
 build-macos:
-	GOOS=darwin GOARCH=amd64 go build -o preview server.go
+	GOOS=darwin GOARCH=amd64 go build -o bin/preview server.go
+
+build-linux:
+	GOOS=linux GOARCH=amd64 go build -o bin/preview-linux server.go
 
 # 打包 Windows 和 macOS 可执行文件
-build-all: build-windows build-macos
+build-all: build-windows build-macos build-linux
